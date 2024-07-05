@@ -1,0 +1,232 @@
+*{
+        font-family: "Rajdhani", sans-serif;
+        margin: 0;;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+nav{
+        background-color: transparent;
+        height: 50px;
+        display: flex; 
+        justify-content: center;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+}
+
+nav ul{
+        display: flex;
+        
+}
+
+nav ul li a{
+        margin: 10px;
+        color: brown;
+        text-decoration: none;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+
+}
+
+nav ul li a:hover{
+        text-shadow: 2px 4px 6px black;
+        color: blue;
+}
+
+video{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+}
+
+.overlay{
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        color: aliceblue;
+}
+
+h1:hover{
+        text-shadow: 2px 4px 6px rgb(39, 153, 228);
+        text-decoration: underline;
+}
+
+span{
+        color:blueviolet;
+        font-weight: bolder;
+}
+
+/* #home{
+        height: 700px;
+        background-image: url(https://cdn-employer-wp.arc.dev/wp-content/uploads/2022/04/good-software-developer-1128x635.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+} */
+
+/* .main{
+        border: 3px ridge blueviolet;
+        padding: 10px; */
+        /* width: 300px;
+        height: 400px;
+        margin-left: 70%; */
+        /* margin-top: 50px; */
+/* } */
+
+#home{
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+}
+
+#home::before{
+        content: "";
+        background-image: url(https://cdn-employer-wp.arc.dev/wp-content/uploads/2022/04/good-software-developer-1128x635.jpg);
+        height: 100%;
+        background-size: cover;
+}
+
+.main{
+        display: flex;
+        position: absolute;
+        border: 2px inset blueviolet;
+        padding: 30px;
+        top: 80%;
+        left: 45%;
+        box-shadow: 2px 4px 6px white;
+}
+
+.main:hover{
+        scale: 1.03;
+}
+
+.pic{
+        display: flex;
+}
+.pic img{
+        width: 500px;
+}
+.pic h4{
+        color: brown;
+        text-align:center;
+        font-size: 30px;
+        font-style: italic;
+}
+.pic p{
+        text-align: justify;
+        margin: 10px;
+}
+h3{
+        color: darkblue;
+        text-align: center;
+        margin-top: 10px;
+        background-color: aquamarine;
+}
+
+.gallery{
+        border: 3px ridge blueviolet;
+        margin-top: 5px;
+}
+.gallery img{
+        width: 450px;
+        margin: 5px;
+        padding: 10px;
+        margin-left: 25px;
+        cursor: pointer;
+}
+.gallery img:hover{
+        scale: 1.05;
+        box-shadow: 2px 4px 6px blueviolet;
+}
+
+.row{
+        background-color: grey;
+        display: flex;
+        margin-top: 5px;
+}
+
+.box{
+        width: 400px;
+        margin: 5px;
+        /* background-color: bisque; */
+        height: 450px;
+        border: 2px inset blueviolet;
+        background: linear-gradient(to top, bisque 50%, rgb(0, 204, 255) 50%);
+        background-size: 100% 200%;
+        transition: all 0.6s;
+}
+
+.box:hover{
+        background-position: right bottom;
+}
+
+.box img{
+        width: 100%;
+        border-radius: 20%;
+}
+
+.box h5{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        color: brown;
+}
+
+.box p{
+        text-align: justify;
+        font-style: italic;
+        padding: 10px;
+}
+
+form{
+        width: 500px;
+        margin-left: 500px;
+}
+
+.input{
+        width: 100%;
+        margin: 10px;
+}
+
+button{
+        color:antiquewhite;
+        background-color: black;
+        padding: 5px;
+        cursor: pointer;
+}
+
+.cv{
+        background-color: blue;
+        color: antiquewhite;
+        padding: 5px;
+        margin: 10px;
+        text-decoration: none;
+        border-radius: 10%;
+        margin-left: 60%;
+}
+
+/* SCROLLBAR ---> */
+
+/* width */
+::-webkit-scrollbar {
+        width: 10px;
+}
+      
+/* Track */
+::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+}
+       
+/* Handle */
+::-webkit-scrollbar-thumb {
+        background: rgb(217, 95, 95); 
+        border-radius: 10px;
+}
+      
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+        background: red; 
+}
